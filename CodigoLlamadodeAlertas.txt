@@ -1,0 +1,35 @@
+var
+  Parametro2, Parametro1 : pChar;
+  ID : Integer;
+  Historial : Boolean;
+Begin
+    Parametro1 := pChar(WideString('null'));
+    Parametro2 := pChar(WideString('null'));
+    ID := 1;
+    Historial := True;
+
+    try
+      EnvioAlertasIntegra(ID, Parametro1, Parametro2, Historial);
+    except
+      on E : Exception do
+      begin
+          ShowMessage('.!! : ' + sLineBreak + E.ClassName+ sLineBreak +E.Message);
+      end;
+    end;
+    showMessage('Alertas enviadas');
+
+  //btnEmpleados.Down := false;
+
+  {Application.CreateForm(TfrmEmpleados, frmEmpleados);
+  frmEmpleados.Show;
+  btnEmpleados.Down := false;}
+
+end;
+
+ qryValidaHoras.Close;
+   qryValidaHoras.Open;
+   if not qryValidaHoras.IsEmpty then  //En caso de que la hora actual este entre la hora de inicio y la hora de termino
+   begin
+
+   end;
+   //UWPInfoMessage('Aviso', 'Valida alertas');     //Aqui irian las validaciones de las alertas, llamando una por una
