@@ -1,2 +1,2 @@
-# CODIGOS_MIOS
-Aqui se suben todos los codigos que e aprendido a lo largo del TIEMPO
+# Funciones Delphi
+Aqui se suben todas las funciones y codigos que e aprendido durante el tiempo que trabaje como desarrollador de software
